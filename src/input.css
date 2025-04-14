@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-body-bg: #ffffff;
+  --color-select-bg: #f6fefe;
+  --color-palered: #fdf1f1;
+  --color-azure: #f0fefe;
+  --color-teal: #25b0b459;
+  --color-mosque: #005659;
+  /* border color */
+  --color-border: #b3cfd0;
+  /* text colors */
+  --color-grey400: #636363;
+  --color-redishbrown: #522d27;
+  --color-darkbrown: #8b6c66;
+  --color-dimgray: #4b4b4b;
+  --color-darkcyan: #005053;
+  
+  /* font */
+  --font-tomato: "Tomato Grotesk", sans-serif;
+  --font-sfpro: "SF pro display", sans-serif;
+  --font-neue: "Neue Montreal", sans-serif;
+}
+
+@font-face {
+  font-family: "Tomato Grotesk";
+  src: url("/assets/font/Tomato-Grotesk/TomatoGrotesk-Regular.otf") format(otf);
+}
+
+@font-face {
+  font-family: "SF pro display";
+  src: url("/assets/font/SF-pro-display/SFPRODISPLAYREGULAR.OTF") format(otf);
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/assets/font/NeueMontreal/NeueMontreal-Regular.otf") format(otf);
+}

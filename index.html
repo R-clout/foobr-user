@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Foobr user</title>
+</head>
+
+<body class="bg-body-bg pt-[70px] px-[24px]">
+    <header>
+        <img src="./assets/img/foobr logo.svg">
+    </header>
+    <main>
+        <section class="flex justify-between my-4">
+            <div class="flex items-center">
+                <img src="./assets/img/avatar.jpg" alt="profile-picture" loading="lazy"
+                    class="w-[20px] h-[20px] rounded-[30px]" />
+                <p class="font-tomato font-normal text-grey400">Hello,<span class="font-sfpro font-medium ">
+                        Dupe!&#128522</span></p>
+            </div>
+            <div class="bg-select-bg border border-border w-[4.6rem] h-[2.1rem] text-grey400 rounded-sm p-1">
+                <select>
+                    <option value="Today" class="">Today</option>
+                </select>
+            </div>
+        </section>
+        <section class=" w-[20.44rem] h-[5.5rem] bg-palered p-4 flex relative my-5 rounded-md">
+            <div>
+                <p class="font-tomato font-medium text-[1.25rem] text-redishbrown">Total people</p>
+                <p class="text-[0.9rem] text-darkbrown font-normal font-neue">12</p>
+            </div>
+            <div class="flex ">
+                <img src="./assets/img/bg/girlbg.svg" alt="girl-bg" class="h-16 absolute bottom-0 right-24"
+                    loading="lazy" />
+                <img src="./assets/img/bg/glassesgirlbg.svg" alt="glassesgirlbg"
+                    class="h-[5.3rem] absolute right-16 bottom-0" loading="lazy" />
+                <img src="./assets/img/bg/manbg.svg" alt="manbg" class="bottom-0 absolute right-[2.7rem]" />
+                <img src="./assets/img/bg/headoffbg.svg" alt="headoffbg" class="h-20 absolute top-0 right-[0.7rem]" />
+            </div>
+        </section>
+        <section class="bg-azure h-fit w-[20.44rem] rounded-md p-3">
+            <p class="font-tomato font-medium text-dimgray">User Statistics</p>
+            <div>
+                <canvas id="myChart" class="w-full"></canvas>
+            </div>
+        </section>
+        <section class="bg-mosque my-4 p-5 rounded-md flex relative">
+            <div>
+                <p class="font-medium text-[1.3rem] text-white font-tomato">My Order code</p>
+                <div class="flex gap-1 items-center">
+                    <p class="font-normal font-neue text-[0.9rem] text-white">21ADRHS3F</p>
+                    <img src="./assets/img/copy.svg" alt="copy Button" loading="lazy" class="w-[1rem] h-[1rem]" />
+                </div>
+            </div>
+            <img src="./assets/img/huge discount.svg" alt="discount-icon" loading="lazy"
+                class="absolute top-0 right-1" />
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
