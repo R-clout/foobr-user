@@ -42,4 +42,13 @@ function copyText(){
   navigator.clipboard.writeText(number.textContent);
 }
 
-copyButton.addEventListener("click", copyText);
+copyButton.addEventListener("click", () => {
+  copyText();
+  setTimeout(() => {
+    copyButton.innerHTML = `<img src="./assets/img/copy.svg" alt="copy Button" loading="lazy"
+                        class="w-[1rem] h-[1rem]" />`
+  }, 2000);
+  // Change the button text to "copied!" for 2 seconds  
+  copyButton.innerHTML = `<img src="./assets/img/circle-check.svg" alt="copy Button" loading="lazy"
+                        class="w-[1rem] h-[1rem]" />`;
+});

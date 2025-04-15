@@ -185,6 +185,9 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
   .right-1 {
     right: calc(var(--spacing) * 1);
   }
@@ -200,8 +203,14 @@
   .right-\[2\.7rem\] {
     right: 2.7rem;
   }
+  .right-\[50\%\] {
+    right: 50%;
+  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
+  }
+  .left-\[50\%\] {
+    left: 50%;
   }
   .m-0 {
     margin: calc(var(--spacing) * 0);
@@ -311,6 +320,9 @@
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
+  .self-center {
+    align-self: center;
+  }
   .rounded-\[30px\] {
     border-radius: 30px;
   }
@@ -380,6 +392,9 @@
   }
   .text-\[1\.25rem\] {
     font-size: 1.25rem;
+  }
+  .text-\[1rem\] {
+    font-size: 1rem;
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
