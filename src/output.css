@@ -188,9 +188,6 @@
   .right-1 {
     right: calc(var(--spacing) * 1);
   }
-  .right-3 {
-    right: calc(var(--spacing) * 3);
-  }
   .right-16 {
     right: calc(var(--spacing) * 16);
   }
@@ -205,6 +202,9 @@
   }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
+  }
+  .mx-auto {
+    margin-inline: auto;
   }
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
@@ -239,6 +239,12 @@
   .h-\[20px\] {
     height: 20px;
   }
+  .h-\[100\%\] {
+    height: 100%;
+  }
+  .h-\[100vh\] {
+    height: 100vh;
+  }
   .h-fit {
     height: fit-content;
   }
@@ -254,8 +260,23 @@
   .w-\[20px\] {
     width: 20px;
   }
+  .w-\[100\%\] {
+    width: 100%;
+  }
+  .w-\[375px\] {
+    width: 375px;
+  }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
+  }
+  .max-w-\[375px\] {
+    max-width: 375px;
+  }
+  .max-w-full {
+    max-width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -266,9 +287,6 @@
   .resize {
     resize: both;
   }
-  .items-baseline {
-    align-items: baseline;
-  }
   .items-center {
     align-items: center;
   }
@@ -277,9 +295,6 @@
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
-  }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
   }
   .rounded-\[30px\] {
     border-radius: 30px;
@@ -315,9 +330,6 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
-  }
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
@@ -333,8 +345,8 @@
   .pt-\[70px\] {
     padding-top: 70px;
   }
-  .align-baseline {
-    vertical-align: baseline;
+  .text-center {
+    text-align: center;
   }
   .font-neue {
     font-family: var(--font-neue);
@@ -383,6 +395,250 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .max-lg\:mx-auto {
+    @media (width < 64rem) {
+      margin-inline: auto;
+    }
+  }
+  .max-lg\:max-w-\[375px\] {
+    @media (width < 64rem) {
+      max-width: 375px;
+    }
+  }
+  .min-sm\:mx-auto {
+    @media (width >= 40rem) {
+      margin-inline: auto;
+    }
+  }
+  .min-sm\:sm\:mx-auto {
+    @media (width >= 40rem) {
+      @media (width >= 40rem) {
+        margin-inline: auto;
+      }
+    }
+  }
+  .sm\:mx-auto {
+    @media (width >= 40rem) {
+      margin-inline: auto;
+    }
+  }
+  .min-sm\:max-w-\[375px\] {
+    @media (width >= 40rem) {
+      max-width: 375px;
+    }
+  }
+  .min-sm\:sm\:max-w-\[375px\] {
+    @media (width >= 40rem) {
+      @media (width >= 40rem) {
+        max-width: 375px;
+      }
+    }
+  }
+  .sm\:max-w-\[375px\] {
+    @media (width >= 40rem) {
+      max-width: 375px;
+    }
+  }
+  .md\:mx-auto {
+    @media (width >= 48rem) {
+      margin-inline: auto;
+    }
+  }
+  .md\:max-w-\[375px\] {
+    @media (width >= 48rem) {
+      max-width: 375px;
+    }
+  }
+  .lg\:mx-auto {
+    @media (width >= 64rem) {
+      margin-inline: auto;
+    }
+  }
+  .lg\:h-\[1\.5rem\] {
+    @media (width >= 64rem) {
+      height: 1.5rem;
+    }
+  }
+  .lg\:h-\[2\.5rem\] {
+    @media (width >= 64rem) {
+      height: 2.5rem;
+    }
+  }
+  .lg\:h-\[7rem\] {
+    @media (width >= 64rem) {
+      height: 7rem;
+    }
+  }
+  .lg\:h-\[30px\] {
+    @media (width >= 64rem) {
+      height: 30px;
+    }
+  }
+  .lg\:w-24 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 24);
+    }
+  }
+  .lg\:w-30 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 30);
+    }
+  }
+  .lg\:w-36 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 36);
+    }
+  }
+  .lg\:w-40 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 40);
+    }
+  }
+  .lg\:w-\[5rem\] {
+    @media (width >= 64rem) {
+      width: 5rem;
+    }
+  }
+  .lg\:w-\[30px\] {
+    @media (width >= 64rem) {
+      width: 30px;
+    }
+  }
+  .lg\:w-\[40px\] {
+    @media (width >= 64rem) {
+      width: 40px;
+    }
+  }
+  .lg\:max-w-\[375px\] {
+    @media (width >= 64rem) {
+      max-width: 375px;
+    }
+  }
+  .lg\:rounded-\[50\%\] {
+    @media (width >= 64rem) {
+      border-radius: 50%;
+    }
+  }
+  .lg\:text-\[1\.2rem\] {
+    @media (width >= 64rem) {
+      font-size: 1.2rem;
+    }
+  }
+  .lg\:text-\[1\.3rem\] {
+    @media (width >= 64rem) {
+      font-size: 1.3rem;
+    }
+  }
+  .lg\:text-\[1\.5rem\] {
+    @media (width >= 64rem) {
+      font-size: 1.5rem;
+    }
+  }
+  .xl\:h-\[\.3rem\] {
+    @media (width >= 80rem) {
+      height: .3rem;
+    }
+  }
+  .xl\:h-\[1\.7rem\] {
+    @media (width >= 80rem) {
+      height: 1.7rem;
+    }
+  }
+  .xl\:h-\[1\.9rem\] {
+    @media (width >= 80rem) {
+      height: 1.9rem;
+    }
+  }
+  .xl\:h-\[2\] {
+    @media (width >= 80rem) {
+      height: 2;
+    }
+  }
+  .xl\:h-\[7\.3rem\] {
+    @media (width >= 80rem) {
+      height: 7.3rem;
+    }
+  }
+  .xl\:h-\[7\.6rem\] {
+    @media (width >= 80rem) {
+      height: 7.6rem;
+    }
+  }
+  .xl\:h-\[7\.9rem\] {
+    @media (width >= 80rem) {
+      height: 7.9rem;
+    }
+  }
+  .xl\:h-\[40px\] {
+    @media (width >= 80rem) {
+      height: 40px;
+    }
+  }
+  .xl\:w-40 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 40);
+    }
+  }
+  .xl\:w-\[5\.2rem\] {
+    @media (width >= 80rem) {
+      width: 5.2rem;
+    }
+  }
+  .xl\:w-\[40px\] {
+    @media (width >= 80rem) {
+      width: 40px;
+    }
+  }
+  .xl\:rounded-\[50\%\] {
+    @media (width >= 80rem) {
+      border-radius: 50%;
+    }
+  }
+  .xl\:p-5 {
+    @media (width >= 80rem) {
+      padding: calc(var(--spacing) * 5);
+    }
+  }
+  .xl\:p-6 {
+    @media (width >= 80rem) {
+      padding: calc(var(--spacing) * 6);
+    }
+  }
+  .xl\:p-7 {
+    @media (width >= 80rem) {
+      padding: calc(var(--spacing) * 7);
+    }
+  }
+  .xl\:text-\[1\.3rem\] {
+    @media (width >= 80rem) {
+      font-size: 1.3rem;
+    }
+  }
+  .xl\:text-\[1\.4rem\] {
+    @media (width >= 80rem) {
+      font-size: 1.4rem;
+    }
+  }
+  .xl\:text-\[1\.5rem\] {
+    @media (width >= 80rem) {
+      font-size: 1.5rem;
+    }
+  }
+  .xl\:text-\[1\.9rem\] {
+    @media (width >= 80rem) {
+      font-size: 1.9rem;
+    }
+  }
+  .xl\:text-\[2rem\] {
+    @media (width >= 80rem) {
+      font-size: 2rem;
+    }
+  }
+  .xl\:text-\[1\.rem\] {
+    @media (width >= 80rem) {
+      color: 1.rem;
+    }
   }
 }
 @font-face {

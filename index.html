@@ -9,28 +9,31 @@
     <title>Foobr user</title>
 </head>
 
-<body class="bg-body-bg pt-[70px] px-[24px]">
+<body class="bg-body-bg pt-[70px] px-[24px] mx-auto w-[375px] md:max-w-[375px] md:mx-auto lg:max-w-[375px] lg:mx-auto">
     <header>
-        <img src="./assets/img/foobr logo.svg">
+        <img src="./assets/img/foobr logo.svg" class="lg:w-36 xl:w-40">
     </header>
     <main>
-        <section class="flex justify-between my-4">
+        <section class="flex justify-between items-center my-4">
             <div class="flex items-center">
                 <img src="./assets/img/avatar.jpg" alt="profile-picture" loading="lazy"
-                    class="w-[20px] h-[20px] rounded-[30px]" />
-                <p class="font-tomato font-normal text-grey400">Hello,<span class="font-sfpro font-medium ">
+                    class="w-[20px] h-[20px] rounded-[30px] lg:w-[30px] lg:h-[30px] lg:rounded-[50%] xl:w-[40px] xl:h-[40px] xl:rounded-[50%]" />
+                <p class="font-tomato font-normal text-grey400 lg:text-[1.3rem] xl:text-[1.4rem]">Hello,<span
+                        class="font-sfpro font-medium ">
                         Dupe!&#128522</span></p>
             </div>
-            <div class="bg-select-bg border border-border w-[4.6rem] h-[2.1rem] text-grey400 rounded-sm p-1">
+            <div
+                class="bg-select-bg border border-border xl:text-[1.3rem] xl:w-[5.2rem] lg:w-[5rem] lg:h-[2.5rem] w-[4.6rem] h-[2.1rem] text-grey400 rounded-sm p-1">
                 <select>
-                    <option value="Today" class="">Today</option>
+                    <option value="Today" class="text-center ">Today</option>
                 </select>
             </div>
         </section>
-        <section class=" w-[20.44rem] h-[5.5rem] bg-palered p-4 flex relative my-5 rounded-md">
+        <section
+            class=" w-[20.44rem] h-[5.5rem] xl:h-[7.9rem] xl:p-7 lg:h-[7rem] bg-palered p-4 flex relative my-5 rounded-md">
             <div>
-                <p class="font-tomato font-medium text-[1.25rem] text-redishbrown">Total people</p>
-                <p class="text-[0.9rem] text-darkbrown font-normal font-neue">12</p>
+                <p class="font-tomato font-medium text-[1.25rem] text-redishbrown lg:text-[1.5rem]">Total people</p>
+                <p class="text-[0.9rem] lg:text-[1.3rem] text-darkbrown font-normal font-neue">12</p>
             </div>
             <div class="flex ">
                 <img src="./assets/img/bg/girlbg.svg" alt="girl-bg" class="h-16 absolute bottom-0 right-24"
@@ -42,23 +45,23 @@
             </div>
         </section>
         <section class="bg-azure h-fit w-[20.44rem] rounded-md p-3">
-            <p class="font-tomato font-medium text-dimgray">User Statistics</p>
+            <p class="font-tomato font-medium text-dimgray lg:text-[1.3rem]">User Statistics</p>
             <div>
                 <canvas id="myChart" class="w-full"></canvas>
             </div>
         </section>
-        <section class="bg-mosque my-4 p-5 rounded-md flex relative">
-            <div>
-                <p class="font-medium text-[1.3rem] text-white font-tomato">My Order code</p>
-                <div class="flex gap-1 items-center">
-                    <p class="font-normal font-neue text-[0.9rem] text-white">21ADRHS3F</p>
-                    <img src="./assets/img/copy.svg" alt="copy Button" loading="lazy" class="w-[1rem] h-[1rem]" />
-                </div>
-            </div>
-            <img src="./assets/img/huge discount.svg" alt="discount-icon" loading="lazy"
-                class="absolute top-0 right-1" />
-        </section>
     </main>
+    <footer class="bg-mosque my-4 p-5 xl:h-[7.6rem] xl:p-6 w-[20.44rem] rounded-md flex relative">
+        <div>
+            <p class="font-medium text-[1.3rem] text-white font-tomato lg:h-[1.5rem] xl:text-[1.4rem]">My Order code</p>
+            <div class="flex gap-1 items-center">
+                <p class="font-normal font-neue text-[0.9rem] lg:text-[1.3rem] text-white xl:text-[1.4rem]">21ADRHS3F
+                </p>
+                <img src="./assets/img/copy.svg" alt="copy Button" loading="lazy" class="w-[1rem] h-[1rem]" />
+            </div>
+        </div>
+        <img src="./assets/img/huge discount.svg" alt="discount-icon" loading="lazy" class="absolute top-0 right-1" />
+    </footer>
     <script src="script.js"></script>
 </body>
 
