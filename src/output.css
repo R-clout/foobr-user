@@ -203,6 +203,9 @@
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
+  .m-0 {
+    margin: calc(var(--spacing) * 0);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -211,6 +214,9 @@
   }
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
+  }
+  .box-border {
+    box-sizing: border-box;
   }
   .flex {
     display: flex;
@@ -248,6 +254,9 @@
   .h-fit {
     height: fit-content;
   }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
   .w-\[1rem\] {
     width: 1rem;
   }
@@ -262,6 +271,9 @@
   }
   .w-\[100\%\] {
     width: 100%;
+  }
+  .w-\[100\] {
+    width: 100;
   }
   .w-\[375px\] {
     width: 375px;
@@ -292,6 +304,9 @@
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-end {
+    justify-content: flex-end;
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
