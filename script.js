@@ -39,7 +39,7 @@ const copyButton = document.getElementById("copy-button")
 const number = document.getElementById("number");
 
 function copyText(){
-  navigator.clipboard.writeText(number.textContent);
+  navigator.clipboard.writeText(number.textContent.trim());
 }
 
 copyButton.addEventListener("click", () => {
